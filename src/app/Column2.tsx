@@ -26,9 +26,9 @@ const Column2 = () => {
 
         <div className="p-8 mx-3 mb-3 rounded-b-xl bg-slate-800">
           <div className="flex flex-col space-y-2">
-            {items.map((item: any) => {
+            {items.map((item: any, idx) => {
               return (
-                <div className="flex justify-center">
+                <div key={idx} className="flex justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-5 h-5"
